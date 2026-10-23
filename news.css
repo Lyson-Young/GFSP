@@ -1,0 +1,41 @@
+/* 首页标语错落排布，按钮与第二行文字右侧对齐。 */
+.hero-text-block{display:inline-flex;flex-direction:column;align-items:flex-end;max-width:100%}
+.hero .hero-text-block h1{font-size:clamp(32px,3.9vw,56px);width:max-content;max-width:100%;margin-bottom:42px}
+.hero-line{display:block;white-space:nowrap}
+.hero-line-offset{padding-inline-start:3em}
+.hero-text-block>.button{align-self:flex-end}
+.hero-visual{margin-bottom:0}
+/* 一侧照片封面，一侧保留紧凑的分类快讯列表。 */
+.news-layout{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:38px;align-items:start}
+.news-layout-list-only{grid-template-columns:1fr}
+.news-feature-link{display:block}
+.news-feature-figure{margin:0}
+.news-feature-figure>img{width:100%;height:auto;aspect-ratio:3/2;object-fit:contain;background:#e9f0f4}
+.news-feature-figure figcaption{padding-top:15px}
+.news-feature-figure h3{font-size:19px;line-height:1.75;font-weight:500;color:#172f3b;margin:0 0 7px}
+.news-feature-figure time{font-size:14px;color:#5b7482;font-variant-numeric:tabular-nums}
+.news-feature-link:hover h3{color:#217fa5}
+.news-layout .announcement-row:first-child{padding-top:0;min-height:36px}
+.news-layout .announcement-row{grid-template-columns:8px minmax(0,1fr) 88px;gap:9px}
+.news-page{max-width:1050px}
+.news-article-body{padding-block:30px 10px}
+.news-article-body p{font-size:19px;line-height:2;color:#171e23;margin:0 0 22px}
+.news-article-photo{margin:10px 0 26px}
+.news-article-photo img{width:100%;height:auto;display:block}
+.news-article-photo figcaption{font-size:15px;line-height:1.8;text-align:center;margin-top:12px;color:#506a78}
+.news-sources{border-top:1px solid #dce6eb;margin-top:26px;padding:22px 0 26px;display:flex;flex-wrap:wrap;gap:12px 25px;font-size:15px;color:#28647f;line-height:1.8}
+.news-sources>span{color:#465e6b}
+.news-sources a{border-bottom:1px solid #c2dce7}
+@media(max-width:1100px){.news-layout{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:26px}}
+@media(max-width:760px){
+  .hero .hero-text-block h1{font-size:clamp(26px,8.2vw,40px);margin-bottom:29px}
+  .news-layout{grid-template-columns:1fr;gap:26px}
+  .news-feature-figure h3{font-size:18px;line-height:1.7}
+  .news-layout .announcement-row{grid-template-columns:8px minmax(0,1fr) 82px;gap:7px}
+  .news-layout .announcement-row:first-child{min-height:42px}
+  .news-article-body{padding-top:25px}
+  .news-article-body p{font-size:18px;line-height:1.95}
+  .news-article-photo{margin-block:8px 22px}
+  .news-article-photo figcaption{font-size:14px}
+  .news-sources{font-size:15px;gap:10px 20px}
+}

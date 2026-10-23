@@ -1,0 +1,61 @@
+/* 公告采用紧凑的单行列表，摘要保留原文语义格式。 */
+.announcements-section .section-heading{margin-bottom:26px}
+.announcement-row{grid-template-columns:10px minmax(0,1fr) 100px;gap:12px;align-items:center;min-height:44px;padding:9px 0;border:0}
+.announcement-row:last-child{border:0}
+.announcement-row::before{content:"-";color:#1e2c33;font-size:16px;line-height:1.65;align-self:start}
+.announcement-copy{min-width:0}
+.announcement-date{display:flex;justify-content:flex-end;align-self:start;padding-top:3px}
+.announcement-date time{font-size:13px;line-height:1.8;white-space:nowrap;color:#6f7e88;font-variant-numeric:tabular-nums}
+.announcement-row h3{font-size:16px;line-height:1.65;font-weight:400;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#111;margin:0}
+.announcement-category{color:#111;margin-right:5px}
+.announcement-journal{font-weight:400;color:inherit}
+.announcement-row:hover h3{color:#217fa5}
+.announcement-order{font-size:15px;color:#425e6d;line-height:1.8;margin:0}
+.paper-page{max-width:980px;padding-block:52px 42px}
+.paper-header{padding-bottom:30px;border-bottom:1px solid #dce6eb}
+.paper-kicker{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;font-size:15px;line-height:1.8;color:#4c6877;margin:0 0 20px}
+.paper-kicker>span:first-child{color:#946015;background:#fff6e5;padding:3px 10px}
+.paper-header h1{font-size:clamp(28px,3vw,39px);font-weight:700;line-height:1.65;letter-spacing:.2px;color:#132e3b;margin:0 0 22px;overflow-wrap:anywhere}
+.paper-english-title{font-size:20px;line-height:1.7;color:#304e5f;margin:0 0 20px;overflow-wrap:anywhere}
+.paper-credit{display:flex;flex-wrap:wrap;gap:5px 26px;font-size:17px;line-height:1.9;color:#285d78;margin:0 0 22px}
+.paper-authors{font-size:16px;line-height:1.9;color:#3d5360;margin:0 0 14px}
+.paper-citation{display:flex;flex-wrap:wrap;gap:3px 13px;line-height:1.9;font-size:17px;color:#294f65;margin:0}
+.paper-citation strong{font-weight:600}
+.paper-date-note{font-size:15px;line-height:1.9;color:#526a77;margin:18px 0 0}
+.paper-summary{padding-block:32px 10px}
+.paper-summary h2{font-size:25px;line-height:1.6;color:#173848;font-weight:600;margin:0 0 21px}
+.paper-summary p{font-size:19px;line-height:2;color:#171e23;margin:0 0 22px;letter-spacing:.2px}
+.paper-summary .paper-abstract{font-family:Georgia,"Times New Roman",serif;font-size:19px;line-height:1.9;letter-spacing:0;overflow-wrap:break-word}
+.paper-abstract i{font-style:italic}
+.paper-abstract sub,.paper-abstract sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+.paper-abstract sup{top:-.5em}
+.paper-abstract sub{bottom:-.22em}
+.paper-source{display:flex;align-items:center;justify-content:space-between;gap:24px;margin:15px 0 35px;padding:25px 28px;background:#f3f8fa;border-left:3px solid #61b6d5}
+.paper-source-label{font-size:17px;font-weight:600;color:#1d4257}
+.paper-source p{font-size:16px;color:#3b6176;line-height:1.8;margin:8px 0 0;overflow-wrap:anywhere}
+.paper-source p a{text-decoration:underline;text-underline-offset:4px}
+.paper-fulltext{white-space:nowrap;flex-shrink:0;padding:14px 21px;font-size:17px;gap:20px}
+.paper-navigation{display:flex;justify-content:space-between;gap:20px;padding-block:6px 28px;border-bottom:1px solid #dde7ec;font-size:16px;line-height:1.8;color:#2f6c86}
+@media(max-width:760px){
+  .announcement-row{grid-template-columns:8px minmax(0,1fr) 82px;gap:7px;min-height:42px;padding-block:9px}
+  .announcement-date{grid-column:auto;padding-top:1px}
+  .announcement-date time{font-size:12px;grid-column:auto}
+  .announcement-row::before{font-size:14px}
+  .announcement-row h3{font-size:14px;line-height:1.7;white-space:normal;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
+  .announcement-order{font-size:14px}
+  .paper-page{padding-block:30px 25px}
+  .paper-header{padding-bottom:24px}
+  .paper-header h1{font-size:28px;line-height:1.65;margin-bottom:18px}
+  .paper-english-title{font-size:18px;line-height:1.7;margin-bottom:16px}
+  .paper-credit{font-size:16px;gap:4px 20px;margin-bottom:18px}
+  .paper-authors{font-size:16px}
+  .paper-citation{font-size:16px}
+  .paper-summary{padding-top:27px}
+  .paper-summary h2{font-size:23px;margin-bottom:18px}
+  .paper-summary p{font-size:18px;line-height:1.95;letter-spacing:0}
+  .paper-summary .paper-abstract{font-size:18px;line-height:1.85}
+  .paper-source{align-items:flex-start;flex-direction:column;gap:20px;padding:22px 20px}
+  .paper-source p{font-size:15px}
+  .paper-fulltext{font-size:16px}
+  .paper-navigation{font-size:15px}
+}

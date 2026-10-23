@@ -1,0 +1,129 @@
+/* 正文与辅助文字采用清晰字号，手机端不再缩成小字。 */
+body{font-size:17px;color:#15191c}
+.page-intro{display:grid;grid-template-columns:370px minmax(0,1fr);gap:24px;align-items:center;padding-block:40px 35px;min-height:310px}
+.page-intro-copy{position:relative;z-index:1}
+.page-intro h1{color:#172f3b}
+.page-subtitle{font-size:17px;color:#354a56;line-height:1.9}
+.campus-illustration{margin:0 -14px 0 0;min-width:0}
+.campus-illustration img{width:100%;height:auto;display:block;mix-blend-mode:multiply}
+.section-kicker{font-size:15px;color:#465f6d;letter-spacing:.6px}
+.page-links{gap:30px}
+.page-links a{font-size:16px;gap:22px}
+.section-heading h2{font-size:31px;color:#121a1f}
+.back-link{font-size:16px;color:#3b5665}
+.team-overview{max-width:none;margin-bottom:0}
+.team-overview p{font-size:20px;line-height:2;color:#111;font-weight:400;letter-spacing:.25px;margin:0 0 24px;text-align:justify}
+.team-overview p:last-child{margin-bottom:0}
+.research-section{padding-block:55px 60px;background:#fafcfd}
+.group-title{font-size:22px;color:#172f3b}
+.faculty-card{grid-template-columns:160px minmax(0,1fr);gap:26px}
+.faculty-copy h4{font-size:27px;color:#172f3b}
+.member-role{font-size:16px;color:#286d8c;margin-bottom:7px}
+.member-institution{font-size:15px;color:#425965;margin-bottom:14px}
+.faculty-description{font-size:16px;line-height:1.9;color:#222;margin-bottom:18px}
+.faculty-link{font-size:16px}
+.students-heading>span{font-size:15px;color:#465f6d}
+.student-card{padding:25px 16px 27px}
+.students-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.student-photo{width:174px}
+.student-card h4{font-size:23px;color:#172f3b}
+.student-identity{white-space:nowrap;line-height:1.65}
+.student-degree{font-size:16px;letter-spacing:0;font-weight:400;color:#286d8c}
+.student-focus{font-size:15px;color:#394f5b;line-height:1.9;margin:8px 0 0}
+.student-focus-label{display:inline;font-size:inherit;margin:0;font-weight:700;color:#253f4e}
+.student-tabs{display:flex;gap:30px;border-bottom:1px solid #dce7ec;margin-bottom:28px}
+.student-tab{display:inline-flex;align-items:center;gap:10px;background:transparent;border:0;border-bottom:2px solid transparent;padding:13px 3px;color:#526f7e;font-size:17px;line-height:1.7;cursor:pointer}
+.student-tab[aria-selected="true"]{color:#173e51;border-bottom-color:#409ec2;font-weight:600}
+.student-tab>span{font-size:14px;line-height:1.6;color:#52778b;background:#edf5f8;padding:0 7px;border-radius:3px}
+.student-panel{scroll-margin-top:120px}
+.student-panel[hidden]{display:none}
+.student-panel:focus-visible{outline:2px solid #409ec2;outline-offset:8px}
+.students-heading{scroll-margin-top:120px}
+.alumni-destination{border-top:1px solid #e3ebef;padding-top:16px;margin-top:19px}
+.alumni-destination>span{font-size:14px;color:#506b79}
+.alumni-destination>p{font-size:16px;line-height:1.85;color:#1c4154;margin:7px 0 0}
+.motion-toggle{font-size:14px;color:#486777}
+.announcements-empty h3{font-size:19px;color:#344f5e}
+.announcements-empty p{font-size:16px;color:#4b6471}
+.announcement-row time{font-size:15px;color:#4c6573}
+.announcement-row h3{font-size:20px}
+.announcement-row p{font-size:16px;color:#4d6573}
+.footer-brand>span{font-size:16px;color:#243e4c}
+.site-footer p{font-size:14px;color:#425e6e;letter-spacing:.4px}
+.footer-contact>span{font-size:15px;color:#3c5665}
+.footer-contact>a{font-size:16px;color:#28647f}
+.site-footer>small{font-size:14px;color:#4b6471}
+.page-end{font-size:16px;color:#356a83}
+#detail-body{font-size:18px;color:#202a30}
+@media(max-width:1100px){
+  .page-intro{grid-template-columns:340px minmax(0,1fr);gap:10px}
+  .page-subtitle{font-size:16px}
+  .page-links a{font-size:15px}
+  .faculty-grid{grid-template-columns:1fr;gap:36px}
+  .faculty-card{grid-template-columns:165px minmax(0,1fr);gap:30px}
+  .faculty-photo .portrait{max-height:235px}
+}
+@media(max-width:1000px){
+  .students-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:760px){
+  .header-inner{gap:12px}
+  .back-link{min-width:42px;min-height:42px;align-items:center;justify-content:center;font-size:24px;flex-shrink:0}
+  .back-label{display:none}
+  .page-intro{grid-template-columns:1fr;gap:14px;padding-block:34px 27px}
+  .page-intro h1{font-size:35px}
+  .page-subtitle{font-size:17px;color:#354a56}
+  .campus-illustration{margin:0 -4px}
+  .page-links{margin-top:22px;gap:30px}
+  .page-links a{font-size:16px;gap:19px}
+  .section-heading{gap:12px;margin-bottom:25px}
+  .section-heading h2{font-size:27px}
+  .section-kicker{font-size:14px;letter-spacing:.2px}
+  .team-overview p{font-size:18px;line-height:1.95;letter-spacing:0;margin-bottom:24px;text-align:left}
+  .research-section{padding-block:35px 40px}
+  .group-title{font-size:21px;margin-bottom:22px}
+  .faculty-card{grid-template-columns:110px minmax(0,1fr);grid-template-rows:45px 35px minmax(67px,auto) auto auto;gap:0 20px;padding-bottom:30px}
+  .faculty-copy{display:contents}
+  .faculty-photo{grid-column:1;grid-row:1/4}
+  .faculty-copy h4{grid-column:2;grid-row:1;font-size:24px;align-self:end;margin:0 0 6px}
+  .member-role{grid-column:2;grid-row:2;font-size:15px;line-height:1.7;align-self:center;margin:0}
+  .member-institution{grid-column:2;grid-row:3;font-size:15px;align-self:start;margin:6px 0 0}
+  .faculty-description{grid-column:1/-1;grid-row:4;font-size:16px;line-height:1.85;margin:20px 0 16px}
+  .faculty-link{grid-column:1/-1;grid-row:5;font-size:15px;justify-self:start}
+  .students-heading{flex-wrap:wrap;gap:0;margin-top:34px;margin-bottom:22px}
+  .students-heading .group-title{margin-bottom:6px}
+  .students-heading>span{font-size:14px;line-height:1.8;margin-left:auto}
+  .students-grid{grid-template-columns:1fr;gap:18px}
+  .student-card{padding:18px 10px 21px}
+  .student-photo{width:130px;max-width:100%;margin-bottom:17px}
+  .student-card h4{font-size:21px}
+  .student-degree{font-size:15px}
+  .student-focus{font-size:14px;line-height:1.8;overflow-wrap:anywhere}
+  .motion-toggle{font-size:14px;bottom:-25px;padding:10px 0}
+  .hero-visual{margin-bottom:24px}
+  .announcements-empty h3{font-size:18px}
+  .announcements-empty p{font-size:16px}
+  .announcements-section .section-heading{flex-wrap:wrap}
+  .announcement-row{grid-template-columns:1fr 20px;gap:8px 12px}
+  .announcement-row time{font-size:14px;grid-column:1/-1}
+  .announcement-row h3{font-size:18px}
+  .announcement-row p{font-size:16px}
+  .footer-brand>span{font-size:15px}
+  .site-footer p{font-size:14px;line-height:1.7}
+  .footer-contact>span{font-size:15px}
+  .footer-contact>a{font-size:16px;overflow-wrap:anywhere}
+  .site-footer>small{font-size:14px}
+  .page-end{font-size:15px;gap:15px}
+  #detail-body{font-size:17px}
+}
+@media(max-width:380px){
+  .brand-name{font-size:18px}
+  .brand-word{font-size:28px}
+  .brand{gap:10px}
+  .brand-name{padding-left:10px}
+  .faculty-card{grid-template-columns:96px minmax(0,1fr);grid-template-rows:40px 30px minmax(58px,auto) auto auto;gap:0 18px}
+  .faculty-photo{width:auto}
+  .students-heading>span{margin-left:0}
+  .student-focus{font-size:14px}
+  .footer-brand{gap:12px}
+}
