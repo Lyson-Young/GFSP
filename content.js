@@ -3,7 +3,8 @@
 window.GSFP_CONTENT = {
   faculty: [
     { name: '陈建义', role: '教授 · 博士生导师', institution: '中国石油大学（北京）', photo: './assets/members/chen-jianyi-white.png', description: '主要研究多相流分离技术与装备、流体机械及工程和过程装备智能化，面向石油化工、煤的清洁高效利用与海洋油气开采等领域开展研究。', url: 'https://faculty.cup.edu.cn/chenjianyi/' },
-    { name: '宋健斐', role: '教授 · 博士生导师', institution: '中国石油大学（北京）', photo: './assets/members/song-jianfei-white.png', description: '主要研究气固／液分离理论与技术，以及基于数智化的装备性能评价，关注分离装备中的流动特性、颗粒沉积与运行诊断。', url: 'https://faculty.cup.edu.cn/songjianfei/' }
+    { name: '宋健斐', role: '教授 · 博士生导师', institution: '中国石油大学（北京）', photo: './assets/members/song-jianfei-white.png', description: '主要研究气固／液分离理论与技术，以及基于数智化的装备性能评价，关注分离装备中的流动特性、颗粒沉积与运行诊断。', url: 'https://faculty.cup.edu.cn/songjianfei/' },
+    { name: '严超宇', role: '副教授 · 硕士生导师', institution: '中国石油大学（北京）', photo: './assets/members/yan-chaoyu-white.png', description: '主要研究多相流理论与分离技术、过程装备强化技术和流态化工程，关注气固两相流动、颗粒输运及含油污水处理等问题。', url: 'https://faculty.cup.edu.cn/yanchaoyu/' }
   ],
   students: [
     { name: '杨栗昕', role: '博士研究生', focus: '气固分离；细粉粘附；状态监测与智能诊断', photo: './assets/members/yang-lixin.jpg' },
